@@ -1,0 +1,12 @@
+pavan03@pavankalyan:~$ mkdir SamDir
+pavan03@pavankalyan:~$ cd SamDir/
+pavan03@pavankalyan:~/SamDir$ touch samFile1.txt
+pavan03@pavankalyan:~/SamDir$ touch samFile2.txt
+pavan03@pavankalyan:~/SamDir$ touch samFile3.txt
+pavan03@pavankalyan:~$ ls -lt SamDir/ > sortFileOpt.txt
+pavan03@pavankalyan:~$ cat sortFileOpt.txt
+total 0
+-rw-rw-r-- 1 pavan03 pavan03 0 Jan 23 20:55 sortFileOpt.txt
+-rw-rw-r-- 1 pavan03 pavan03 0 Jan 23 20:53 samFile3.txt
+-rw-rw-r-- 1 pavan03 pavan03 0 Jan 23 20:53 samFile2.txt
+-rw-rw-r-- 1 pavan03 pavan03 0 Jan 23 20:53 samFile1.txt 

@@ -1,0 +1,249 @@
+pavan03@pavankalyan:~$ ps aux
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.1 166864 11424 ?        Ss   19:54   0:02 /sbin/init splash
+root           2  0.0  0.0      0     0 ?        S    19:54   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        S    19:54   0:00 [pool_workqueue_release]
+root           4  0.0  0.0      0     0 ?        I<   19:54   0:00 [kworker/R-rcu_g]
+root           5  0.0  0.0      0     0 ?        I<   19:54   0:00 [kworker/R-rcu_p]
+root           6  0.0  0.0      0     0 ?        I<   19:54   0:00 [kworker/R-slub_]
+root           7  0.0  0.0      0     0 ?        I<   19:54   0:00 [kworker/R-netns]
+root          10  0.0  0.0      0     0 ?        I<   19:54   0:00 [kworker/0:0H-events_highpri]
+root          12  0.0  0.0      0     0 ?        I<   19:54   0:00 [kworker/R-mm_pe]
+root          13  0.0  0.0      0     0 ?        I    19:54   0:00 [rcu_tasks_kthread]
+root          14  0.0  0.0      0     0 ?        I    19:54   0:00 [rcu_tasks_rude_kthread]
+root          15  0.0  0.0      0     0 ?        I    19:54   0:00 [rcu_tasks_trace_kthread]
+root          16  0.0  0.0      0     0 ?        S    19:54   0:00 [ksoftirqd/0]
+root          17  0.1  0.0      0     0 ?        I    19:54   0:05 [rcu_preempt]
+root          18  0.0  0.0      0     0 ?        S    19:54   0:00 [migration/0]
+root          19  0.0  0.0      0     0 ?        S    19:54   0:00 [idle_inject/0]
+root          20  0.0  0.0      0     0 ?        S    19:54   0:00 [cpuhp/0]
+root          21  0.0  0.0      0     0 ?        S    19:54   0:00 [cpuhp/1]
+root          22  0.0  0.0      0     0 ?        S    19:54   0:00 [idle_inject/1]
+root          23  0.0  0.0      0     0 ?        S    19:54   0:00 [migration/1]
+root          24  0.0  0.0      0     0 ?        S    19:54   0:00 [ksoftirqd/1]
+root          26  0.0  0.0      0     0 ?        I<   19:54   0:00 [kworker/1:0H-kblockd]
+root          27  0.0  0.0      0     0 ?        S    19:54   0:00 [cpuhp/2]
+root          28  0.0  0.0      0     0 ?        S    19:54   0:00 [idle_inject/2]
+root          29  0.0  0.0      0     0 ?        S    19:54   0:00 [migration/2]
+root          30  0.0  0.0      0     0 ?        S    19:54   0:00 [ksoftirqd/2]
+root          32  0.0  0.0      0     0 ?        I<   19:54   0:00 [kworker/2:0H-events_highpri]
+root          33  0.0  0.0      0     0 ?        S    19:54   0:00 [cpuhp/3]
+root          34  0.0  0.0      0     0 ?        S    19:54   0:00 [idle_inject/3]
+root          35  0.0  0.0      0     0 ?        S    19:54   0:00 [migration/3]
+root          36  0.0  0.0      0     0 ?        S    19:54   0:01 [ksoftirqd/3]
+root          39  0.0  0.0      0     0 ?        S    19:54   0:00 [cpuhp/4]
+root          40  0.0  0.0      0     0 ?        S    19:54   0:00 [idle_inject/4]
+root          41  0.0  0.0      0     0 ?        S    19:54   0:00 [migration/4]
+root          42  0.0  0.0      0     0 ?        S    19:54   0:00 [ksoftirqd/4]
+root          44  0.0  0.0      0     0 ?        I<   19:54   0:00 [kworker/4:0H-events_highpri]
+root          45  0.0  0.0      0     0 ?        S    19:54   0:00 [cpuhp/5]
+root          46  0.0  0.0      0     0 ?        S    19:54   0:00 [idle_inject/5]
+root          47  0.0  0.0      0     0 ?        S    19:54   0:00 [migration/5]
+root          48  0.0  0.0      0     0 ?        S    19:54   0:00 [ksoftirqd/5]
+root          50  0.0  0.0      0     0 ?        I<   19:54   0:00 [kworker/5:0H-events_highpri]
+root          51  0.0  0.0      0     0 ?        S    19:54   0:00 [cpuhp/6]
+root          52  0.0  0.0      0     0 ?        S    19:54   0:00 [idle_inject/6]
+root          53  0.0  0.0      0     0 ?        S    19:54   0:00 [migration/6]
+root          54  0.0  0.0      0     0 ?        S    19:54   0:00 [ksoftirqd/6]
+root          56  0.0  0.0      0     0 ?        I<   19:54   0:00 [kworker/6:0H-events_highpri]
+root          57  0.0  0.0      0     0 ?        S    19:54   0:00 [cpuhp/7]
+root          58  0.0  0.0      0     0 ?        S    19:54   0:00 [idle_inject/7]
+root          59  0.0  0.0      0     0 ?        S    19:54   0:00 [migration/7]
+root          60  0.1  0.0      0     0 ?        S    19:54   0:04 [ksoftirqd/7]
+root          62  0.0  0.0      0     0 ?        I<   19:54   0:00 [kworker/7:0H-events_highpri]
+root          63  0.0  0.0      0     0 ?        S    19:54   0:00 [kdevtmpfs]
+root          64  0.0  0.0      0     0 ?        I<   19:54   0:00 [kworker/R-inet_]
+root          66  0.0  0.0      0     0 ?        S    19:54   0:00 [kauditd]
+root          67  0.0  0.0      0     0 ?        S    19:54   0:00 [khungtaskd]
+root          68  0.0  0.0      0     0 ?        S    19:54   0:00 [oom_reaper]
+root          70  0.0  0.0      0     0 ?        I<   19:54   0:00 [kworker/R-write]
+root          71  0.0  0.0      0     0 ?        S    19:54   0:00 [kcompactd0]
+root          72  0.0  0.0      0     0 ?        SN   19:54   0:00 [ksmd]
+root          73  0.0  0.0      0     0 ?        SN   19:54   0:00 [khugepaged]
+root          74  0.0  0.0      0     0 ?        I<   19:54   0:00 [kworker/R-kinte]
+root          75  0.0  0.0      0     0 ?        I<   19:54   0:00 [kworker/R-kbloc]
+root          76  0.0  0.0      0     0 ?        I<   19:54   0:00 [kworker/R-blkcg]
+root          77  0.0  0.0      0     0 ?        S    19:54   0:00 [irq/9-acpi]
+root          79  0.0  0.0      0     0 ?        I<   19:54   0:00 [kworker/R-tpm_d]
+root          80  0.0  0.0      0     0 ?        I<   19:54   0:00 [kworker/R-ata_s]
+root          81  0.0  0.0      0     0 ?        I<   19:54   0:00 [kworker/R-md]
+root          82  0.0  0.0      0     0 ?        I<   19:54   0:00 [kworker/R-md_bi]
+root          83  0.0  0.0      0     0 ?        I<   19:54   0:00 [kworker/R-edac-]
+root          84  0.0  0.0      0     0 ?        I<   19:54   0:00 [kworker/R-devfr]
+root          85  0.0  0.0      0     0 ?        S    19:54   0:00 [watchdogd]
+root          87  0.0  0.0      0     0 ?        I<   19:54   0:00 [kworker/0:1H-kblockd]
+root          89  0.0  0.0      0     0 ?        S    19:54   0:00 [kswapd0]
+root          90  0.0  0.0      0     0 ?        S    19:54   0:00 [ecryptfs-kthread]
+root          91  0.0  0.0      0     0 ?        I<   19:54   0:00 [kworker/R-kthro]
+root          93  0.0  0.0      0     0 ?        I<   19:54   0:00 [kworker/R-acpi_]
+root          95  0.0  0.0      0     0 ?        S    19:54   0:00 [scsi_eh_0]
+root          96  0.0  0.0      0     0 ?        I<   19:54   0:00 [kworker/R-scsi_]
+root          97  0.0  0.0      0     0 ?        S    19:54   0:00 [scsi_eh_1]
+root          98  0.0  0.0      0     0 ?        I<   19:54   0:00 [kworker/R-scsi_]
+root          99  0.1  0.0      0     0 ?        I    19:54   0:04 [kworker/u16:3-events_power_efficient]
+root         101  0.0  0.0      0     0 ?        I<   19:54   0:00 [kworker/R-mld]
+root         102  0.0  0.0      0     0 ?        I<   19:54   0:00 [kworker/R-ipv6_]
+root         103  0.0  0.0      0     0 ?        I<   19:54   0:00 [kworker/4:1H-kblockd]
+root         110  0.0  0.0      0     0 ?        I<   19:54   0:00 [kworker/1:1H-kblockd]
+root         116  0.0  0.0      0     0 ?        I<   19:54   0:00 [kworker/R-kstrp]
+root         118  0.0  0.0      0     0 ?        I<   19:54   0:00 [kworker/u17:0]
+root         131  0.0  0.0      0     0 ?        I<   19:54   0:00 [kworker/R-charg]
+root         167  0.0  0.0      0     0 ?        I<   19:54   0:00 [kworker/2:1H-kblockd]
+root         175  0.0  0.0      0     0 ?        S    19:54   0:00 [scsi_eh_2]
+root         176  0.0  0.0      0     0 ?        I<   19:54   0:00 [kworker/R-scsi_]
+root         228  0.0  0.0      0     0 ?        S    19:54   0:00 [jbd2/sda3-8]
+root         229  0.0  0.0      0     0 ?        I<   19:54   0:00 [kworker/R-ext4-]
+root         268  0.0  0.1  48216 16768 ?        S<s  19:54   0:01 /lib/systemd/systemd-journald
+root         300  0.0  0.0      0     0 ?        S    19:54   0:00 [irq/18-vmwgfx]
+root         301  0.0  0.0      0     0 ?        I<   19:54   0:00 [kworker/R-ttm]
+root         318  0.0  0.0  27176  7040 ?        Ss   19:54   0:00 /lib/systemd/systemd-udevd
+root         388  0.0  0.0      0     0 ?        I<   19:54   0:00 [kworker/R-crypt]
+root         405  0.0  0.0      0     0 ?        I<   19:54   0:01 [kworker/3:2H-kblockd]
+systemd+     625  0.1  0.0  14836  6784 ?        Ss   19:54   0:03 /lib/systemd/systemd-oomd
+systemd+     626  0.0  0.1  25928 13824 ?        Ss   19:54   0:01 /lib/systemd/systemd-resolved
+systemd+     627  0.0  0.0  89388  7296 ?        Ssl  19:54   0:00 /lib/systemd/systemd-timesyncd
+root         662  0.0  0.0 239908  7100 ?        Ssl  19:54   0:00 /usr/libexec/accounts-daemon
+root         663  0.0  0.0   2816  1664 ?        Ss   19:54   0:00 /usr/sbin/acpid
+avahi        666  0.0  0.0   7628  3456 ?        Ss   19:54   0:00 avahi-daemon: running [pavankalyan.loca
+root         667  0.0  0.0   9496  2816 ?        Ss   19:54   0:00 /usr/sbin/cron -f -P
+message+     669  0.0  0.0  11068  6016 ?        Ss   19:54   0:02 @dbus-daemon --system --address=systemd
+root         670  0.0  0.1 261368 18376 ?        Ssl  19:54   0:01 /usr/sbin/NetworkManager --no-daemon
+root         677  0.0  0.0  82700  3840 ?        Ssl  19:54   0:00 /usr/sbin/irqbalance --foreground
+root         678  0.0  0.1  41068 20736 ?        Ss   19:54   0:00 /usr/bin/python3 /usr/bin/networkd-disp
+root         681  0.0  0.1 243016 11028 ?        Ssl  19:54   0:02 /usr/libexec/polkitd --no-debug
+root         682  0.0  0.0 240096  7296 ?        Ssl  19:54   0:00 /usr/libexec/power-profiles-daemon
+syslog       684  0.0  0.0 222404  5504 ?        Ssl  19:54   0:00 /usr/sbin/rsyslogd -n -iNONE
+root         688  0.1  0.3 1691444 33764 ?       Ssl  19:54   0:04 /usr/lib/snapd/snapd
+root         690  0.0  0.0 236380  6528 ?        Ssl  19:54   0:00 /usr/libexec/switcheroo-control
+root         692  0.0  0.0  23644  7900 ?        Ss   19:54   0:00 /lib/systemd/systemd-logind
+root         694  0.0  0.1 393236 12616 ?        Ssl  19:54   0:00 /usr/libexec/udisks2/udisksd
+root         698  0.0  0.0  16504  6016 ?        Ss   19:54   0:00 /sbin/wpa_supplicant -u -s -O /run/wpa_
+avahi        705  0.0  0.0   7444  1408 ?        S    19:54   0:00 avahi-daemon: chroot helper
+root         753  0.0  0.1 317976 11840 ?        Ssl  19:54   0:00 /usr/sbin/ModemManager
+root         760  0.0  0.1  73020 13440 ?        Ss   19:54   0:00 /usr/sbin/cupsd -l
+root         764  0.0  0.2 118164 22912 ?        Ssl  19:54   0:00 /usr/bin/python3 /usr/share/unattended-
+root         789  0.0  0.0 241344  8576 ?        Ssl  19:54   0:00 /usr/sbin/gdm3
+lp           803  0.0  0.0  16288  6656 ?        S    19:54   0:00 /usr/lib/cups/notifier/dbus dbus://
+lp           808  0.0  0.0  16288  6656 ?        S    19:54   0:00 /usr/lib/cups/notifier/dbus dbus://
+root         826  0.0  0.1 172060 11008 ?        Ssl  19:54   0:00 /usr/sbin/cups-browsed
+kernoops     839  0.0  0.0  13092  2476 ?        Ss   19:54   0:00 /usr/sbin/kerneloops --test
+kernoops     855  0.0  0.0  13092  2348 ?        Ss   19:54   0:00 /usr/sbin/kerneloops
+rtkit        905  0.0  0.0 154004  3328 ?        SNsl 19:54   0:00 /usr/libexec/rtkit-daemon
+root        1122  0.0  0.0 242356  8704 ?        Ssl  19:54   0:00 /usr/libexec/upowerd
+root        1158  0.0  0.1 298216 20068 ?        Ssl  19:54   0:00 /usr/libexec/packagekitd
+colord      1339  0.0  0.1 245328 12736 ?        Ssl  19:54   0:00 /usr/libexec/colord
+root        1402  0.0  0.0      0     0 ?        I    19:54   0:01 [kworker/3:3-events]
+root        1407  0.0  0.0 170720 10508 ?        Sl   19:55   0:00 gdm-session-worker [pam/gdm-password]
+pavan03     1420  0.0  0.0  17960 10240 ?        Ss   19:55   0:00 /lib/systemd/systemd --user
+root        1421  0.0  0.0      0     0 ?        I<   19:55   0:00 [kworker/6:2H-kblockd]
+pavan03     1422  0.0  0.0 170152  5876 ?        S    19:55   0:00 (sd-pam)
+pavan03     1428  0.0  0.0  39588  6144 ?        Ssl  19:55   0:00 /usr/bin/pipewire
+pavan03     1429  0.0  0.0  23604  6528 ?        Ssl  19:55   0:00 /usr/bin/pipewire-media-session
+pavan03     1430  0.0  0.2 1685144 26980 ?       Ssl  19:55   0:02 /usr/bin/pulseaudio --daemonize=no --lo
+pavan03     1431  0.0  0.1  39096 11136 ?        Ss   19:55   0:01 /snap/snapd-desktop-integration/253/usr
+pavan03     1441  0.0  0.0  12300  8192 ?        Ss   19:55   0:02 /usr/bin/dbus-daemon --session --addres
+pavan03     1450  0.0  0.0 240644  7936 ?        Ssl  19:55   0:00 /usr/libexec/gvfsd
+pavan03     1459  0.0  0.0 240888  7192 ?        Sl   19:55   0:00 /usr/bin/gnome-keyring-daemon --daemoni
+pavan03     1461  0.0  0.0 455660  6784 ?        Sl   19:55   0:00 /usr/libexec/gvfsd-fuse /run/user/1000/
+pavan03     1480  0.0  0.0 611676  7296 ?        Ssl  19:55   0:00 /usr/libexec/xdg-document-portal
+pavan03     1484  0.0  0.0 162392  6144 tty2     Ssl+ 19:55   0:00 /usr/libexec/gdm-wayland-session env GN
+pavan03     1485  0.0  0.0 236152  6144 ?        Ssl  19:55   0:00 /usr/libexec/xdg-permission-store
+root        1493  0.0  0.0   2796  1920 ?        Ss   19:55   0:00 fusermount3 -o rw,nosuid,nodev,fsname=p
+pavan03     1497  0.0  0.3 723500 34256 ?        SNsl 19:55   0:01 /usr/libexec/tracker-miner-fs-3
+pavan03     1498  0.0  0.1 223044 15488 tty2     Sl+  19:55   0:00 /usr/libexec/gnome-session-binary --ses
+pavan03     1556  0.0  0.0  91912  5504 ?        Ssl  19:55   0:00 /usr/libexec/gnome-session-ctl --monito
+pavan03     1570  0.0  0.1 445452 17024 ?        Ssl  19:55   0:00 /usr/libexec/gnome-session-binary --sys
+root        1571  0.0  0.0      0     0 ?        I    19:55   0:00 [kworker/5:3-mm_percpu_wq]
+pavan03     1588  0.0  0.0 309624  7552 ?        Sl   19:55   0:00 /usr/libexec/at-spi-bus-launcher --laun
+pavan03     1595  0.0  0.0   8432  4352 ?        S    19:55   0:00 /usr/bin/dbus-daemon --config-file=/usr
+pavan03     1597 14.2  3.4 6300460 382648 ?      Ssl  19:55   6:57 /usr/bin/gnome-shell
+pavan03     1640  0.0  0.0 315928 10240 ?        Ssl  19:55   0:00 /usr/libexec/gvfs-udisks2-volume-monito
+pavan03     1645  0.0  0.0 236636  6528 ?        Ssl  19:55   0:00 /usr/libexec/gvfs-goa-volume-monitor
+pavan03     1649  0.0  0.3 587936 41984 ?        Sl   19:55   0:00 /usr/libexec/goa-daemon
+pavan03     1673  0.0  0.1 338404 14976 ?        Sl   19:55   0:00 /usr/libexec/goa-identity-service
+pavan03     1675  0.0  0.0 315212  7936 ?        Ssl  19:55   0:00 /usr/libexec/gvfs-afc-volume-monitor
+pavan03     1684  0.0  0.0 236460  6400 ?        Ssl  19:55   0:00 /usr/libexec/gvfs-mtp-volume-monitor
+pavan03     1689  0.0  0.0 237416  6784 ?        Ssl  19:55   0:00 /usr/libexec/gvfs-gphoto2-volume-monito
+pavan03     1716  0.0  0.1 582712 17792 ?        Sl   19:55   0:00 /usr/libexec/gnome-shell-calendar-serve
+pavan03     1724  0.0  0.2 392216 25088 ?        Ssl  19:55   0:00 /usr/libexec/evolution-source-registry
+pavan03     1728  0.0  0.0 156972  5504 ?        Ssl  19:55   0:00 /usr/libexec/dconf-service
+pavan03     1734  0.0  0.2 840496 30592 ?        Ssl  19:55   0:00 /usr/libexec/evolution-calendar-factory
+pavan03     1737  0.0  0.2 430564 27284 ?        Sl   19:55   0:00 /snap/snapd-desktop-integration/253/usr
+pavan03     1747  0.0  0.2 672268 28416 ?        Ssl  19:55   0:00 /usr/libexec/evolution-addressbook-fact
+pavan03     1752  0.0  0.0 314868  8832 ?        Sl   19:55   0:00 /usr/libexec/gvfsd-trash --spawner :1.2
+pavan03     1773  0.0  0.2 2865676 27148 ?       Sl   19:55   0:00 /usr/bin/gjs /usr/share/gnome-shell/org
+pavan03     1774  0.0  0.0 162688  7296 ?        Sl   19:55   0:00 /usr/libexec/at-spi2-registryd --use-gn
+pavan03     1791  0.0  0.0   2892  1664 ?        Ss   19:55   0:00 sh -c /usr/bin/ibus-daemon --panel disa
+pavan03     1792  0.0  0.0 310424  6784 ?        Ssl  19:55   0:00 /usr/libexec/gsd-a11y-settings
+pavan03     1794  0.2  0.1 315552 11776 ?        Sl   19:55   0:07 /usr/bin/ibus-daemon --panel disable
+pavan03     1795  0.0  0.2 598516 25604 ?        Ssl  19:55   0:00 /usr/libexec/gsd-color
+pavan03     1798  0.0  0.1 375468 16256 ?        Ssl  19:55   0:00 /usr/libexec/gsd-datetime
+pavan03     1800  0.0  0.0 311928  8064 ?        Ssl  19:55   0:00 /usr/libexec/gsd-housekeeping
+pavan03     1802  0.0  0.1 340588 21504 ?        Ssl  19:55   0:00 /usr/libexec/gsd-keyboard
+pavan03     1804  0.0  0.2 864164 26240 ?        Ssl  19:55   0:00 /usr/libexec/gsd-media-keys
+pavan03     1806  0.0  0.2 450556 25600 ?        Ssl  19:55   0:00 /usr/libexec/gsd-power
+pavan03     1810  0.0  0.1 249860 11264 ?        Ssl  19:55   0:00 /usr/libexec/gsd-print-notifications
+pavan03     1811  0.0  0.0 457860  6528 ?        Ssl  19:55   0:00 /usr/libexec/gsd-rfkill
+pavan03     1815  0.0  0.0 236292  6272 ?        Ssl  19:55   0:00 /usr/libexec/gsd-screensaver-proxy
+pavan03     1818  0.0  0.0 465944 10624 ?        Ssl  19:55   0:00 /usr/libexec/gsd-sharing
+pavan03     1819  0.0  0.0 386036  8064 ?        Ssl  19:55   0:00 /usr/libexec/gsd-smartcard
+pavan03     1831  0.0  0.0 319344  9728 ?        Ssl  19:55   0:00 /usr/libexec/gsd-sound
+pavan03     1835  0.0  0.2 414908 22528 ?        Ssl  19:55   0:00 /usr/libexec/gsd-wacom
+pavan03     1863  0.0  0.5 828512 64900 ?        Sl   19:55   0:00 /usr/libexec/evolution-data-server/evol
+pavan03     1867  0.0  0.0 232272  7424 ?        Sl   19:55   0:00 /usr/libexec/gsd-disk-utility-notify
+pavan03     1895  0.0  0.0 163484  7168 ?        Sl   19:55   0:00 /usr/libexec/ibus-memconf
+pavan03     1899  0.0  0.2 347824 28900 ?        Sl   19:55   0:02 /usr/libexec/ibus-extension-gtk3
+pavan03     1911  0.0  0.0 237260  7296 ?        Sl   19:55   0:00 /usr/libexec/ibus-portal
+pavan03     1913  0.0  0.1 342360 14976 ?        Sl   19:55   0:00 /usr/libexec/gsd-printer
+pavan03     1969  0.0  0.0 163484  7168 ?        Sl   19:55   0:02 /usr/libexec/ibus-engine-simple
+pavan03     1975  0.0  0.1 623816 13184 ?        Ssl  19:55   0:00 /usr/libexec/xdg-desktop-portal
+pavan03     1995  0.1  1.0 2562308 115356 ?      Ssl  19:55   0:04 /usr/libexec/xdg-desktop-portal-gnome
+pavan03     1998  0.0  0.2 2873956 27180 ?       Sl   19:55   0:00 /usr/bin/gjs /usr/share/gnome-shell/org
+pavan03     2046  0.0  0.5 3061660 62892 ?       Sl   19:55   0:02 gjs /usr/share/gnome-shell/extensions/d
+pavan03     2065  0.0  0.2 344464 25476 ?        Ssl  19:55   0:00 /usr/libexec/xdg-desktop-portal-gtk
+pavan03     2078  0.0  0.0 163052  6528 ?        Ssl  19:55   0:00 /usr/libexec/gvfsd-metadata
+pavan03     2120  0.5  0.4 819892 53600 ?        Ssl  19:55   0:16 /usr/libexec/gnome-terminal-server
+pavan03     2138  0.0  0.0  11268  5248 pts/0    Ss   19:55   0:00 bash
+pavan03     2161  0.0  0.2 494048 29700 ?        Sl   19:56   0:00 update-notifier
+root        3237  0.0  0.0      0     0 ?        I<   20:00   0:00 [kworker/5:2H-kblockd]
+pavan03     3267  6.9  4.2 11730920 459940 ?     Sl   20:03   2:51 /snap/firefox/3358/usr/lib/firefox/fire
+pavan03     3366  0.8  0.7 225372 78296 ?        S    20:03   0:21 /usr/bin/Xwayland :0 -rootless -noreset
+pavan03     3370  0.0  0.7 528808 80600 ?        Ssl  20:03   0:00 /usr/libexec/gsd-xsettings
+pavan03     3395  0.0  0.2 194192 24780 ?        Sl   20:03   0:00 /usr/libexec/ibus-x11
+pavan03     3507  0.0  0.3 204464 34944 ?        Sl   20:03   0:00 /snap/firefox/3358/usr/lib/firefox/fire
+pavan03     3545  0.3  1.2 2476752 134884 ?      Sl   20:03   0:08 /snap/firefox/3358/usr/lib/firefox/fire
+pavan03     3585  0.0  0.1 1461060 20236 ?       Sl   20:03   0:00 /usr/bin/snap userd
+pavan03     3663  0.0  0.7 2438752 84348 ?       Sl   20:03   0:01 /snap/firefox/3358/usr/lib/firefox/fire
+pavan03     3780  0.0  0.4 322000 44288 ?        Sl   20:03   0:00 /snap/firefox/3358/usr/lib/firefox/fire
+pavan03     3782  3.8  4.4 3021428 489796 ?      Sl   20:03   1:35 /snap/firefox/3358/usr/lib/firefox/fire
+pavan03     4061  0.0  0.3 320976 40832 ?        Sl   20:04   0:00 /snap/firefox/3358/usr/lib/firefox/fire
+root        4130  0.0  0.0      0     0 ?        I<   20:04   0:00 [kworker/7:1H-kblockd]
+pavan03     4187  0.0  0.0 388728  8832 ?        Sl   20:05   0:00 /usr/libexec/gvfsd-network --spawner :1
+pavan03     4202  0.0  0.0 316828  8832 ?        Sl   20:05   0:00 /usr/libexec/gvfsd-dnssd --spawner :1.2
+root        4340  0.0  0.0      0     0 ?        I    20:11   0:00 [kworker/1:1-events]
+root        4381  0.0  0.0      0     0 ?        R    20:12   0:01 [kworker/u16:1+events_unbound]
+root        4439  0.0  0.0      0     0 ?        I<   20:13   0:00 [kworker/3:0H]
+root        4532  0.0  0.0      0     0 ?        I    20:16   0:00 [kworker/4:0-events]
+root        4604  0.0  0.0      0     0 ?        I    20:20   0:00 [kworker/7:1-mm_percpu_wq]
+pavan03     4652  0.4  0.6 774600 71720 ?        Sl   20:22   0:05 /usr/bin/gedit --gapplication-service
+root        4826  0.0  0.0      0     0 ?        I    20:25   0:00 [kworker/0:1-events]
+root        4871  0.0  0.0      0     0 ?        R    20:26   0:00 [kworker/u16:0+events_unbound]
+root        4905  0.0  0.0      0     0 ?        I    20:28   0:00 [kworker/1:0-events]
+root        4945  0.0  0.0      0     0 ?        I    20:29   0:00 [kworker/6:0-cgroup_destroy]
+root        4981  0.0  0.0      0     0 ?        I    20:30   0:00 [kworker/7:2-inet_frag_wq]
+root        5033  0.0  0.0      0     0 ?        I    20:31   0:00 [kworker/5:0-inet_frag_wq]
+root        5034  0.0  0.0      0     0 ?        I    20:31   0:00 [kworker/4:1-rcu_gp]
+root        5068  0.0  0.0      0     0 ?        I    20:31   0:00 [kworker/2:0-events]
+root        5182  0.0  0.0      0     0 ?        I    20:35   0:00 [kworker/6:1-events]
+root        5218  0.1  0.0      0     0 ?        I    20:36   0:00 [kworker/3:1-events]
+root        5223  0.0  0.0      0     0 ?        I    20:37   0:00 [kworker/2:1-events]
+root        5231  0.0  0.0      0     0 ?        I    20:38   0:00 [kworker/0:0-inet_frag_wq]
+pavan03     5240  0.1  0.6 2408904 73728 ?       Sl   20:38   0:00 /snap/firefox/3358/usr/lib/firefox/fire
+root        5291  0.0  0.0      0     0 ?        I    20:39   0:00 [kworker/u16:2-events_unbound]
+root        5294  0.0  0.0      0     0 ?        I    20:39   0:00 [kworker/5:1-events]
+root        5295  0.0  0.0      0     0 ?        I    20:39   0:00 [kworker/4:2-events]
+pavan03     5302  0.0  0.5 2385444 61824 ?       Sl   20:39   0:00 /snap/firefox/3358/usr/lib/firefox/fire
+root        5328  0.0  0.0      0     0 ?        I    20:40   0:00 [kworker/7:0]
+pavan03     5337  0.0  0.5 2385448 61184 ?       Sl   20:40   0:00 /snap/firefox/3358/usr/lib/firefox/fire
+pavan03     5373  0.1  0.5 2385448 61184 ?       Sl   20:42   0:00 /snap/firefox/3358/usr/lib/firefox/fire
+pavan03     5408  0.0  0.0  12672  3456 pts/0    R+   20:44   0:00 ps aux 

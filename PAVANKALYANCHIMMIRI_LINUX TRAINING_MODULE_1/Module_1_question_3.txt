@@ -1,0 +1,11 @@
+pavan03@pavankalyan:~/Downloads$ mkdir samdir1
+pavan03@pavankalyan:~/Downloads$ cd samdir1/
+pavan03@pavankalyan:~/Downloads/samdir1$ mkdir samdir2
+pavan03@pavankalyan:~/Downloads/samdir1$ cd samdir2/
+pavan03@pavankalyan:~/Downloads/samdir1/samdir2$ touch demoFile.txt
+pavan03@pavankalyan:~/Downloads/samdir1/samdir2$ cd ..
+pavan03@pavankalyan:~/Downloads/samdir1$ ln -s samdir2/demoFile.txt demoFile_link.txt
+pavan03@pavankalyan:~/Downloads/samdir1$ ls -l
+total 4
+lrwxrwxrwx 1 pavan03 pavan03   20 Jan 23 20:36 demoFile_link.txt -> samdir2/demoFile.txt
+drwxrwxr-x 2 pavan03 pavan03 4096 Jan 23 20:31 samdir2 

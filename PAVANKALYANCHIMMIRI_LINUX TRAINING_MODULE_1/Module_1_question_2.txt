@@ -1,0 +1,4 @@
+pavan03@pavankalyan:~/Downloads/assignWork$ touch demoFile2.txt
+pavan03@pavankalyan:~/Downloads/assignWork$ chmod g-w demoFile2.txt
+pavan03@pavankalyan:~/Downloads/assignWork$ ls -l demoFile2.txt
+-rw-r--r-- 1 pavan03 pavan03 0 Jan 23 20:21 demoFile2.txt 
