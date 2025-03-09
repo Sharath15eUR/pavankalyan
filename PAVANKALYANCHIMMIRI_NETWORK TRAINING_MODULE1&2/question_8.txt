@@ -1,0 +1,27 @@
+8. check iwconfig/ifconfig to understand in detail about network interfaces
+
+pavan03@pavankalyan:~/Documents/Module_1$ ifconfig
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500           //MTU (PACKET SILZE LIMIT)
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fd00::4054:9bb:6eea:4200  prefixlen 64  scopeid 0x0<global>
+        inet6 fe80::57e3:3482:5138:e96a  prefixlen 64  scopeid 0x20<link>
+        inet6 fd00::cb87:aa29:2800:d6ca  prefixlen 64  scopeid 0x0<global>
+        ether 08:00:27:a9:14:12  txqueuelen 1000  (Ethernet)  // MAC address of the interface
+        RX packets 162672  bytes 176348110 (176.3 MB)         // rx packets and tx packets called received and transmitted packets
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 56924  bytes 10557610 (10.5 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536                         //MTU (PACKET SILZE LIMIT)
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 6206  bytes 643545 (643.5 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0   // rx packets and tx packets called received and transmitted packets
+        TX packets 6206  bytes 643545 (643.5 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+// enp0s3,lo -> interface names
+
+
+

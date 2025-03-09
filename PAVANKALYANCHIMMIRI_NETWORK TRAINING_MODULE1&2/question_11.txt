@@ -1,0 +1,35 @@
+USING SSH AND TELNET TO CONNECT TO A SYSTEM IN REMOTE
+
+->Here I used my UBUNTU machine as main machine and my windows machine as my remote machine 
+through my UBUNTU machine I am connecting to windows machine using ssh and telnet.
+
+
+pavan03@pavankalyan:~/Documents/Module_1$ ssh pavan@192.168.xx.xxx //wantedly i am hiding my windows IP addressfor security purpose
+pavan@192.168.xx.xxx's password: 
+
+//After entering the password of my windows machine I am able to control my windows machine cmd
+
+Microsoft Windows [Version 10.0.22631.4974]
+(c) Microsoft Corporation. All rights reserved.
+
+pavan@KALYAN_1986 C:\Users\pavan>cd Documents
+
+pavan@KALYAN_1986 C:\Users\pavan\Documents>exit
+Connection to 192.168.xx.xxx closed.  // Finally connection closed
+
+TELNET
+
+pavan03@pavankalyan:~/Documents/Module_1$ telnet pavan@192.168.xx.xxx 
+pavan@192.168.xx.xxx's password: 
+
+//After entering the password of my windows machine I am able to control my windows machine cmd
+
+Microsoft Windows [Version 10.0.22631.4974]
+(c) Microsoft Corporation. All rights reserved.
+
+pavan@KALYAN_1986 C:\Users\pavan>cd Documents
+
+pavan@KALYAN_1986 C:\Users\pavan\Documents>exit
+Connection to 192.168.xx.xxx closed.  // Finally connection closed
+
+

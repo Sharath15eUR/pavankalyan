@@ -1,0 +1,19 @@
+DHCP PROCESSPF ASSIGNING IP ADDRESS TO THE DEVICES
+
+STEP1: DHCP Discover
+
+-->The device sends a DHCP Discover message as a broadcast (to 255.255.255.255) to find a DHCP server.
+
+STEP2: DHCP OFFER
+
+--> The DHCP server responds with a DHCP Offer message, also sent as a broadcast.
+
+--> This message includes a proposed IP address (from the pool of available addresses).
+
+STEP 3: DHCP REQUEST
+
+--> The device sends a DHCP Request message to the DHCP server, confirming that it accepts the offered IP address.
+
+STEP 4: DHCP ACKNOWLEDGMENT (ACK)
+
+--> The DHCP server sends a DHCP Acknowledgment (ACK) message to the device.

@@ -1,0 +1,12 @@
+9. Log into your home routers web interface
+
+step1: connecting to my router
+step2: using command called 
+
+ifconfig | grep default
+
+I will find the default gateway adress (198.168.xx.xx) and i will the address in the browser
+
+step3: Login into the by entering the password and username
+
+step4: Navigating to the list of devices connected which shows the list of devices connected to the router and ip address and mac address of the device is being shown .

@@ -1,0 +1,79 @@
+Using VNC viewwer,Teamviewer,Anydesk 
+
+Accessing Remote Systems Using VNC Viewer :
+
+VNC (Virtual Network Computing) allows you to control a remote computer over a network.
+Steps:
+
+    Install VNC Viewer and VNC Server:
+
+        On the remote computer, install a VNC Server (e.g., RealVNC, TightVNC, or UltraVNC).
+
+        On your local computer, install VNC Viewer.
+
+    Configure VNC Server on the Remote System:
+
+        Set a password for remote access.
+
+        Note the IP address of the remote system.
+
+    Connect Using VNC Viewer:
+
+        Open VNC Viewer on your local computer.
+
+        Enter the IP address of the remote system.
+
+        Enter the password when prompted.
+
+        You will now see and control the remote desktop.
+        
+Accessing Remote Systems Using TeamViewer ::
+
+TeamViewer is a popular tool for remote access and support.
+Steps:
+
+    Install TeamViewer:
+
+        Download and install TeamViewer on both the local and remote systems.
+
+    Set Up TeamViewer on the Remote System:
+
+        Open TeamViewer on the remote system.
+
+        Note the TeamViewer ID and password (or set a permanent password).
+
+    Connect Using TeamViewer:
+
+        Open TeamViewer on your local computer.
+
+        Enter the remote system's TeamViewer ID.
+
+        Enter the password when prompted.
+
+        You will now have access to the remote desktop.
+        
+
+Accessing Remote Systems Using AnyDesk
+
+AnyDesk is a lightweight and fast remote desktop tool.
+Steps:
+
+    Install AnyDesk:
+
+        Download and install AnyDesk on both the local and remote systems.
+
+    Set Up AnyDesk on the Remote System:
+
+        Open AnyDesk on the remote system.
+
+        Note the AnyDesk Address (e.g., ABC123).
+
+    Connect Using AnyDesk:
+
+        Open AnyDesk on your local computer.
+
+        Enter the remote system's AnyDesk Address.
+
+        If prompted, enter the password set on the remote system.
+
+        You will now have access to the remote desktop.

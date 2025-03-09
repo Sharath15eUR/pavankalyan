@@ -1,0 +1,51 @@
+
+TCP DUMP ::
+
+pavan03@pavankalyan:~$ sudo tcpdump -i enp0s3
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on enp0s3, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+19:55:51.569125 IP 104.18.27.90.https > pavankalyan.41612: Flags [P.], seq 17215838:17216343, ack 3964819952, win 65535, length 505
+19:55:51.570757 IP pavankalyan.41612 > 104.18.27.90.https: Flags [.], ack 505, win 65535, length 0
+19:55:51.632070 IP pavankalyan.35089 > 10.0.2.3.domain: 34820+ PTR? 15.2.0.10.in-addr.arpa. (40)
+19:55:51.648138 IP 104.18.27.90.https > pavankalyan.41612: Flags [P.], seq 505:695, ack 1, win 65535, length 190
+19:55:51.648754 IP pavankalyan.41612 > 104.18.27.90.https: Flags [.], ack 695, win 65535, length 0
+
+830 packets captured
+914 packets received by filter
+84 packets dropped by kernel
+
+pavan03@pavankalyan:~$ sudo tcpdump port 80
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on enp0s3, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+^C
+0 packets captured
+0 packets received by filter
+0 packets dropped by kernel
+pavan03@pavankalyan:~$ sudo tcpdump icmp
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on enp0s3, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+^C
+0 packets captured
+0 packets received by filter
+0 packets dropped by kernel
+
+
+WIRESHARK ::
+
+tcp packets:
+// Multiple are captured but i am providing few packets
+
+"331870","535.115214","2405:201:c057:f032:5452:5580:88b3:33f8","2404:6800:4002:820::2003","TCP","75","[TCP Keep-Alive] 50399 → 443 [ACK] Seq=1868 Ack=6366 Win=131328 Len=1"
+
+"334455","535.856965","2603:1040:a06:3::10","2405:201:c057:f032:5452:5580:88b3:33f8","TCP","74","443 → 49781 [ACK] Seq=919 Ack=1559 Win=501 Len=0"
+
+"336886","538.636870","2404:6800:4002:823::2003","2405:201:c057:f032:5452:5580:88b3:33f8","TLSv1.3","147","Application Data"
+
+"334210","535.787323","2405:201:c057:f032:5452:5580:88b3:33f8","2603:1040:a06:3::10","TLSv1.2","102","Application Data"
+
+UDP packets::
+
+"11","0.002799","2405:200:160a:1702::e","2405:201:c057:f032:5452:5580:88b3:33f8","UDP","1292","443 → 58562 Len=1230"
+"10","0.002269","2405:201:c057:f032:5452:5580:88b3:33f8","2405:200:160a:1702::e","UDP","97","58562 → 443 Len=35"
+"9","0.002176","2405:200:160a:1702::e","2405:201:c057:f032:5452:5580:88b3:33f8","UDP","1292","443 → 58562 Len=1230"
+

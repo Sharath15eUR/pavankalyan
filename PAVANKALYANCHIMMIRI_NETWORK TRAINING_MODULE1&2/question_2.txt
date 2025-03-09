@@ -1,0 +1,91 @@
+
+## commands for Hosting the FTP in ubuntu machine
+
+pavan03@pavankalyan:~$ sudo nano /etc/vsftpd.conf
+pavan03@pavankalyan:~$ sudo systemctl restart vsftpd
+pavan03@pavankalyan:~$ sudo adduser ftpuser
+adduser: The user `ftpuser' already exists.
+pavan03@pavankalyan:~$ sudo adduser kalyanftpuser
+Adding user `kalyanftpuser' ...
+Adding new group `kalyanftpuser' (1002) ...
+Adding new user `kalyanftpuser' (1002) with group `kalyanftpuser' ...
+Creating home directory `/home/kalyanftpuser' ...
+Copying files from `/etc/skel' ...
+New password: 
+Retype new password: 
+passwd: password updated successfully
+
+##connecting and using PUT and GET in FTP 
+
+pavan03@pavankalyan:~$ ftp localhost
+Connected to localhost.
+220 (vsFTPd 3.0.5)
+Name (localhost:pavan03): kalyanftpuser
+331 Please specify the password.
+Password: 
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+
+## using PUT for FTP
+
+ftp> put /home/pavan03/Downloads/hello.txt
+local: /home/pavan03/Downloads/hello.txt remote: /home/pavan03/Downloads/hello.txt
+229 Entering Extended Passive Mode (|||10009|)
+553 Could not create file.
+
+##USING get for FTP
+
+ftp> get /home/pavan03/Downloads/hello.txt
+local: /home/pavan03/Downloads/hello.txt remote: /home/pavan03/Downloads/hello.txt
+229 Entering Extended Passive Mode (|||58676|)
+550 Failed to open file.
+
+
+
+## Commands for hosting SFTP in UBUNTU machine
+
+pavan03@pavankalyan:~$ sudo nano /etc/ssh/sshd_config
+pavan03@pavankalyan:~$ sudo adduser sftpuser
+Adding user `sftpuser' ...
+Adding new group `sftpuser' (1003) ...
+Adding new user `sftpuser' (1003) with group `sftpuser' ...
+Creating home directory `/home/sftpuser' ...
+Copying files from `/etc/skel' ...
+New password: 
+Retype new password: 
+passwd: password updated successfully
+pavan03@pavankalyan:~$ sudo chown root:root /home/sftpuser
+pavan03@pavankalyan:~$ sudo chmod 765 /home/sftpuser
+pavan03@pavankalyan:~$ sudo mkdir /home/sftpuser/uploads
+pavan03@pavankalyan:~$ sudo chown sftpuser:sftpuser /home/sftpuser/uploads
+pavan03@pavankalyan:~$ sudo systemctl restart sshd
+
+## Testing the sftp
+
+pavan03@pavankalyan:~$ sftp sftpuser@localhost
+The authenticity of host 'localhost (127.0.0.1)' can't be established.
+ED25519 key fingerprint is SHA256:zTm0cG2vnGSng69wrxlLDurYE86zO4DslxIKBNOlg40.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'localhost' (ED25519) to the list of known hosts.
+sftpuser@localhost's password: 
+
+
+##Using PUT for SFTP
+
+sftp> put /home/pavan03/Downloads/hello.txt
+local: /home/pavan03/Downloads/hello.txt remote: /home/pavan03/Downloads/hello.txt
+229 Entering Extended Passive Mode (|||10009|)
+553 Could not create file.
+
+##Using GET for SFTP
+
+ftp> get /home/pavan03/Downloads/hello.txt
+local: /home/pavan03/Downloads/hello.txt remote: /home/pavan03/Downloads/hello.txt
+229 Entering Extended Passive Mode (|||58676|)
+550 Failed to open file.
+
+
+
+

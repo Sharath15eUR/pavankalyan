@@ -1,0 +1,78 @@
+# Ping command is used to test network connectivity between our machine and another device in internet
+
+pavan03@pavankalyan:~$ ping google.com
+PING google.com (142.250.194.206) 56(84) bytes of data.
+64 bytes from del12s07-in-f14.1e100.net (142.250.194.206): icmp_seq=1 ttl=255 time=53.2 ms
+64 bytes from del12s07-in-f14.1e100.net (142.250.194.206): icmp_seq=2 ttl=255 time=52.4 ms
+64 bytes from del12s07-in-f14.1e100.net (142.250.194.206): icmp_seq=3 ttl=255 time=52.7 ms
+64 bytes from del12s07-in-f14.1e100.net (142.250.194.206): icmp_seq=4 ttl=255 time=52.6 ms
+64 bytes from del12s07-in-f14.1e100.net (142.250.194.206): icmp_seq=5 ttl=255 time=52.9 ms
+^C
+--- google.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4212ms
+rtt min/avg/max/mdev = 52.443/52.769/53.184/0.259 ms
+
+
+## ARP -> Address resolution protocol
+## The arp command is used to view and manipulate the ARP table whcih maps IP addresses to MAC addressess
+
+pavan03@pavankalyan:~$ arp -a
+_gateway (10.0.2.2) at 52:55:0a:00:02:02 [ether] on enp0s3
+? (10.0.2.3) at 52:55:0a:00:02:03 [ether] on enp0s3
+
+output Explanation:
+First Line: _gateway (10.0.2.2)
+
+    _gateway: This is the hostname of the device. In this case, it refers to the default gateway of your network.
+
+    10.0.2.2: This is the IP address of the default gateway.
+
+    52:55:0a:00:02:02: This is the MAC address of the gateway device.
+
+    [ether]: Indicates that the MAC address is associated with an Ethernet interface.
+
+    on enp0s3: This is the network interface (enp0s3) on your machine where this ARP entry is stored.
+
+2. Second Line: ? (10.0.2.3)
+
+    ?: The hostname is unknown (the system couldn't resolve the hostname for this IP address).
+
+    10.0.2.3: This is the IP address of another device on the network.
+
+    52:55:0a:00:02:03: This is the MAC address of the device with IP 10.0.2.3.
+
+    [ether]: Indicates that the MAC address is associated with an Ethernet interface.
+
+    on enp0s3: This is the network interface (enp0s3) on your machine where this ARP entry is stored
+
+## To delete the arp entry we can use the command
+
+arp -d 10.0.2.2
+
+##To assign MAC address to Ip address manually we can use the below command
+
+arp -s 10.0.2.2 00:1A:2B:3C:4D:5E
+
+## ifconfig command displays network interfaces and allows IP configuration
+
+pavan03@pavankalyan:~$ ifconfig
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fd00::4054:9bb:6eea:4200  prefixlen 64  scopeid 0x0<global>
+        inet6 fe80::57e3:3482:5138:e96a  prefixlen 64  scopeid 0x20<link>
+        inet6 fd00::cb87:aa29:2800:d6ca  prefixlen 64  scopeid 0x0<global>
+        ether 08:00:27:a9:14:12  txqueuelen 1000  (Ethernet)
+        RX packets 149086  bytes 171534943 (171.5 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 44885  bytes 7485176 (7.4 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 4156  bytes 447811 (447.8 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 4156  bytes 447811 (447.8 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+

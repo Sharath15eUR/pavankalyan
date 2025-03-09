@@ -1,0 +1,21 @@
+Using scp for remote copying
+
+I am copying the files in my linux machine to ubuntu machine
+
+command:
+
+pavan03@pavankalyan:~$ scp -r Downloads/dir1/ pavan@192.168.xx.xxx:C:/Users/pavan/OneDrive/Desktop
+
+output:
+
+//I am hiding my laptop address with xx.xxx for security purpose
+pavan@192.168.xx.xxx's password: 
+textfile1.txt                                                                                     100%   39    20.1KB/s   00:00    
+textfile2.txt                                                                                     100%   36    16.0KB/s   00:00    
+
+
+Using  cp  for local copying
+
+pavan03@pavankalyan:~/Documents$ cp -r backup_dir/ Module_3_Assignment/
+
+
