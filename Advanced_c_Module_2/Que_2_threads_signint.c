@@ -1,17 +1,17 @@
 #include <stdio.h>
-#include <windows.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <pthread.h>
 #include <stdbool.h>
 #include <signal.h>
 #include <time.h>
 
 volatile sig_atomic_t keepRunning = 1;
 
-BOOL WINAPI handle_ctrl_c(DWORD signal) {
-    if (signal == CTRL_C_EVENT) {
-        printf("\nSIGINT (Ctrl+C) received. Ignoring termination...\n");
-        return TRUE; 
-    }
-    return FALSE;
+// Signal handler for Ctrl+C
+void handle_sigint(int sig) {
+    printf("\nSIGINT (Ctrl+C) received. Ignoring termination...\n");
+    keepRunning = 0;
 }
 
 bool isPrime(int num) {
@@ -22,13 +22,12 @@ bool isPrime(int num) {
     return true;
 }
 
-void printExecutionTime(const char* threadName, DWORD start, DWORD end) {
-    printf("%s execution time: %.2f seconds\n", threadName, (end - start) / 1000.0);
+void printExecutionTime(const char* threadName, time_t start, time_t end) {
+    printf("%s execution time: %.2f seconds\n", threadName, difftime(end, start));
 }
 
-
-DWORD WINAPI sumPrimes(LPVOID param) {
-    DWORD start = GetTickCount();
+void* sumPrimes(void* param) {
+    time_t start = time(NULL);
     int N = *(int*)param;
     int count = 0, num = 2, sum = 0;
 
@@ -40,60 +39,52 @@ DWORD WINAPI sumPrimes(LPVOID param) {
         num++;
     }
 
-    DWORD end = GetTickCount();
+    time_t end = time(NULL);
     printf("Sum of first %d prime numbers: %d\n", N, sum);
     printExecutionTime("Thread A", start, end);
-    return 0;
+    return NULL;
 }
 
-
-DWORD WINAPI thread1(LPVOID param) {
-    DWORD start = GetTickCount();
-    DWORD begin = GetTickCount();
-    while (GetTickCount() - begin <= 100000 && keepRunning) {
+void* thread1(void* param) {
+    time_t start = time(NULL);
+    time_t begin = time(NULL);
+    while (difftime(time(NULL), begin) <= 100 && keepRunning) {
         printf("Thread 1 running\n");
-        Sleep(2000);
+        sleep(2);
     }
-    DWORD end = GetTickCount();
+    time_t end = time(NULL);
     printExecutionTime("Thread B", start, end);
-    return 0;
+    return NULL;
 }
 
-
-DWORD WINAPI thread2(LPVOID param) {
-    DWORD start = GetTickCount();
-    DWORD begin = GetTickCount();
-    while (GetTickCount() - begin <= 100000 && keepRunning) {
+void* thread2(void* param) {
+    time_t start = time(NULL);
+    time_t begin = time(NULL);
+    while (difftime(time(NULL), begin) <= 100 && keepRunning) {
         printf("Thread 2 running\n");
-        Sleep(3000);
+        sleep(3);
     }
-    DWORD end = GetTickCount();
+    time_t end = time(NULL);
     printExecutionTime("Thread C", start, end);
-    return 0;
+    return NULL;
 }
 
 int main() {
-    
-    SetConsoleCtrlHandler(handle_ctrl_c, TRUE);
+    signal(SIGINT, handle_sigint);  // Register signal handler
 
     int N;
     printf("Enter value of N: ");
     scanf("%d", &N);
 
-    HANDLE hThreadA, hThreadB, hThreadC;
-    DWORD threadID;
+    pthread_t threadA, threadB, threadC;
 
-    hThreadA = CreateThread(NULL, 0, sumPrimes, &N, 0, &threadID);
-    hThreadB = CreateThread(NULL, 0, thread1, NULL, 0, &threadID);
-    hThreadC = CreateThread(NULL, 0, thread2, NULL, 0, &threadID);
+    pthread_create(&threadA, NULL, sumPrimes, &N);
+    pthread_create(&threadB, NULL, thread1, NULL);
+    pthread_create(&threadC, NULL, thread2, NULL);
 
-    WaitForSingleObject(hThreadA, INFINITE);
-    WaitForSingleObject(hThreadB, INFINITE);
-    WaitForSingleObject(hThreadC, INFINITE);
-
-    CloseHandle(hThreadA);
-    CloseHandle(hThreadB);
-    CloseHandle(hThreadC);
+    pthread_join(threadA, NULL);
+    pthread_join(threadB, NULL);
+    pthread_join(threadC, NULL);
 
     printf("All threads completed.\n");
     return 0;
